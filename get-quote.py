@@ -13,7 +13,7 @@ def primary():
   counter = 0
   
   while counter < 5:
-    print(quotes[(rnd*counter)%15])
+    print(quotes[(rnd*counter)%last])
     counter += 1
 
 if __name__== "__main__":
