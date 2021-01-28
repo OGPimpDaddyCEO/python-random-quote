@@ -7,10 +7,14 @@ def primary():
   quotes = f.readlines()
   f.close()
 
-  last = 13
+  last = 15
   rnd = random.randint(0,last)
+
+  counter = 0
   
-  print(quotes[rnd])
+  while counter < 5:
+    print(quotes[(rnd*counter)%15])
+    counter += 1
 
 if __name__== "__main__":
   primary()
